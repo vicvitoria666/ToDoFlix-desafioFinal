@@ -1,38 +1,219 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body{
+  background-color: black;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+  height: 3em;
+  background-color: black;
+  display: flex;
+}
+
+.todoflix{
+  width: 103px;
+  height: 40px;
+  color: red;
+  margin-left: 3rem;
+  margin-right: 2.5em;
+  margin-top: 0.2em;
+  font-family: 'Bebas Neue', cursive;
+  
+}
+
+.inicioButton{
+  margin-right: 2.5em;
+  margin-top: 1em;
+}
+.Category-mom{
+  width: 132px;
+}
+.Category-title{
+  min-height:32px;
+  display:flex;
+  align-items:center;
+  margin-top: 0.5em;
+
+}
+.Category-title p{
+  display:flex;
+  align-items:center;
+  font-size:0.98em;
+  font-weight:normal;
+}
+
+.Category-mom:hover .Category{
+  display: block;
+}
+.Category{
+  display: none;
+  background-color: black;
+  color: white;
+  list-style: none;
+}
+
+.Category li{
+  margin: 0.5em 0.7em 0.6em 0.7em;
+  
+}
+
+.Category li:hover{
+  text-decoration: underline;
+}
+
+.header1{
+  width: 100%;
+  height: 3em;
+  display: flex;
+  color: white;
+}
+
+.addMovie{
+  width: 112px;
+  height: 32px;
+  background-color: #E71B27;
+  color: white;
+  margin: 0.5em 1.5em 0em 6em;
+  border-radius: 4px;
+  border: none;
+}
+
+.addMovie:hover{
+  border: 1px white solid;
+}
+
+.pesquisar{
+  width: 400px;
+  height: 32px;
+  background-image: url('./assets/icons/Search.svg');
+  background-color: #2C2C2C;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: 1.5%;
+  padding-left: 7%;
+  border-radius: 4px;
+  border: none;
+  margin-top: 0.5em;
+margin-right: 0.5em;
+}
+
+.pesquisar:hover{
+  border: 1px white solid;
+}
+
+.userIcon{
+  height: 32px;
+  width: 32px;
+  margin-top: 0.5em;
+}
+
+.flechinha{
+  margin-top: 0.8em;
+}
+
+.seeingRecently{
+  display: flex;
+  margin-top: 5em;
+  margin-left: 3rem;
+}
+
+.fantasticCapitain{
+  width: 28.2rem;
+  margin-bottom: 4px;
+  margin-left: 4rem;
+}
+
+.Carrosel-movies{
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.destaque{
+  margin-bottom: 0.7rem;
+}
+
+.carouselMovies{
+  opacity:10;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius:100px;
+}
+#Rotate{
+  transform:rotate(180deg);
+}
+.carouselMovies:hover{
+  opacity: 1;
+  background-color:rgba(255,255,255,0.2);
+  box-shadow:0 0 100px -3px rgba(255,255,255,0.2);
+}
+.caixa-filmes{
+  width: 263px;
+  border-radius: 4%;
+  padding:0.5vw;
+}
+.caixa-filmes:hover{
+  transition:0.2s;
+  background-color:#2C2C2C;
+}
+
+.CarouselMoviesSon{
+  width: 100%;
+  border-radius: 4%;
+}
+.Figure{
+  position:relative;
+}
+.favoritar{
+  width:8%;
+  position:absolute;
+  right:1.5%;
+  top:1.5%;
+}
+.infos-base{
+  width:100%;
+  display:flex;
+  margin-bottom:3%;
+  justify-content:space-between;
+}
+
+.greenLike{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.1rem;
+}
+
+.likeValue{
+  margin-right: 0.4rem;
+}
+
+.assessement{
+  display: flex;
+  align-items: flex-end;
+}
+
+.nome-filmes{
+width:70%;
+display: inline-block;
+position: relative;
+font-size:1em;
+overflow: hidden;
+white-space: nowrap;  
+text-overflow: ellipsis;
+}
+
+.ResultPage{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Results{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
